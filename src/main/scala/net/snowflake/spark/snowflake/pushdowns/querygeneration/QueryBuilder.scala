@@ -193,7 +193,7 @@ private[querygeneration] class QueryBuilder(plan: LogicalPlan) {
           }
         }
 
-      case Union(children) =>
+      case Union(children, _, _) =>
         Some(UnionQuery(children, alias.next))
 
       case Expand(projections, output, child) =>

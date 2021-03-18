@@ -16,7 +16,7 @@
 
 import scala.util.Properties
 
-val sparkVersion = "3.0.0"
+val sparkVersion = "3.1.1"
 val testSparkVersion = sys.props.get("spark.testVersion").getOrElse(sparkVersion)
 
 /*
@@ -54,7 +54,7 @@ lazy val root = project.withId("spark-snowflake").in(file("."))
       "net.snowflake" % "snowflake-ingest-sdk" % "0.10.1",
       "net.snowflake" % "snowflake-jdbc" % "3.12.17",
       "com.google.guava" % "guava" % "14.0.1" % Test,
-      "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+      "org.scalatest" %% "scalatest" % "3.1.1" % Test,
       "org.mockito" % "mockito-core" % "1.10.19" % Test,
       "org.apache.commons" % "commons-lang3" % "3.5" % "provided",
       // Below is for Spark Streaming from Kafka test only

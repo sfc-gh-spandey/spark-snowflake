@@ -1,6 +1,7 @@
 package org.apache.spark.sql
 
 import org.apache.spark.sql.snowflake.{SFQueryTest, SFTestData, SFTestSessionBase}
+import org.scalatest.funsuite.AnyFunSuite
 
 class SFDataFrameAggregateSuite
     extends DataFrameAggregateSuite
